@@ -1,7 +1,30 @@
 multi-cloud
 =================
 
-O'Reilly Software Architecture Conference Workshop Project
+Building immutably to continuous delivery with minimal inputs
 ------------------
 
-Building immutably to continuous delivery with minimal inputs
+An O'Reilly Software Architecture Conference workshop project instructed by [Adron Hall](https://github.com/adron).
+
+```bash
+npm install express -g
+npm install express-generator -g
+
+express .
+
+npm install
+
+DEBUG=multi-cloud:* npm start
+
+mkdir ecosystem/terraform
+mkdir ecosystem/packer
+
+git init
+echo ".DS_STORE" >> .gitignore && echo "node_modules" >> .gitignore
+git add .gitignore
+
+git add --a
+git commit -m "initialize repo"
+git remote add origin https://github.com/tehcyx/multi-cloud.git
+git push --set-upstream origin master
+```
