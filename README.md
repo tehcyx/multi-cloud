@@ -1,10 +1,12 @@
 multi-cloud
-=================
+===========
 
 Building immutably to continuous delivery with minimal inputs
-------------------
+-------------------------------------------------------------
 
 An O'Reilly Software Architecture Conference workshop project instructed by [Adron Hall](https://github.com/adron).
+
+This document will be the instructions used in order they were used.
 
 ```bash
 npm install express -g
@@ -27,4 +29,26 @@ git add --a
 git commit -m "initialize repo"
 git remote add origin https://github.com/tehcyx/multi-cloud.git
 git push --set-upstream origin master
+```
+
+Codeship
+--------
+
+Setup commands
+```bash
+nvm install 4.6.1
+npm install
+```
+
+Pipeline commands
+```bash
+npm test
+```
+
+Local
+-----
+
+```bash
+mkdir test
+npm install mocha --save
 ```
