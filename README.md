@@ -8,6 +8,8 @@ An O'Reilly Software Architecture Conference workshop project instructed by [Adr
 
 This document will be the instructions used in order they were used.
 
+## Local
+
 ```bash
 npm install express -g
 npm install express-generator -g
@@ -31,8 +33,7 @@ git remote add origin https://github.com/tehcyx/multi-cloud.git
 git push --set-upstream origin master
 ```
 
-Codeship
---------
+## Codeship
 
 Setup commands
 ```bash
@@ -45,8 +46,7 @@ Pipeline commands
 npm test
 ```
 
-Local
------
+## Local
 
 ```bash
 mkdir test
