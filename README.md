@@ -6,7 +6,7 @@ Building immutably to continuous delivery with minimal inputs
 
 An O'Reilly Software Architecture Conference workshop project instructed by [Adron Hall](https://github.com/adron).
 
-This document will be the instructions used in order they were used.
+This document will reflect the instructions used, in order they were applied.
 
 ## Local
 
@@ -51,4 +51,24 @@ npm test
 ```bash
 mkdir test
 npm install mocha --save
+```
+
+## [Terraform](http://terraform.io)
+
+```bash
+brew install terraform
+```
+
+## [Packer](http://packer.io)
+
+```bash
+brew install packer
+```
+
+## Local
+
+```bash
+vi ecosystem/terraform/connection.tf
+cd ecosystem/terraform
+terraform plan
 ```
